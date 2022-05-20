@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Formulario modal</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="agregarTitulo"></h1>
+    </header>
+
+
+  <nav  id="navegacion">
+   <ul id="ul-navegacion"> 
+
+  
+
+   </ul>
+  </nav>
+
+
+
+
+
+    <section>
+      <div class="container">
+        <div id="modal" class="form">
+          <form action="#" method="post" >
+            <fieldset>
+              <legend>Mi formulario</legend>
+              <label for="txtNombre">Nombre :</label>
+              <input id="nombre" type="text" name="" id="txtNombre" maxlength="25" minlength="1" required />
+              <label for="txtApellido">Apellido :</label>
+              <input id="apellido" type="text" name="" id="txtApellido" required />
+              <label for="txtCorreo">Correo :</label>
+              <input type="email" name="" id="txtCorreo" />
+              <label for="txtEdad">Edad : </label>
+              <input type="number" id="txtEdad" required />
+              <label for="txtFecha">Fecha : </label>
+              <input type="date" id="txtFecha" />
+              <label for="txtValoracion"> Valoracion : </label>
+              <input
+                type="range"
+                id="txtValoracion "
+                name="txtValoracion"
+                value="50"
+              />
+              <label for="txtComentario"> Comentario : </label>
+              <br />
+              <textarea rows="10" id="txtComentario" cols=""></textarea>
+              <br />
+              <label for="txtPais">Pais :</label>
+              <select name="" id="txtPais">
+                <option value="ar">arg</option>
+                <option value="co">col</option>
+                <option value="vz">ven</option>
+              </select>
+              <label for="txtPais">Pais :</label>
+              <select name="" id="txtPais">
+                <optgroup label="america">
+                  <option value="ar">arg</option>
+                  <option value="co">col</option>
+                  <option value="vz">ven</option>
+                </optgroup>
+                <optgroup label="america">
+                  <option value="Ar">arg</option>
+                  <option value="Co">col</option>
+                  <option value="Vz">ven</option>
+                </optgroup>
+              </select>
+              <br />
+              <label for="txtNavegador"> Navegador : </label>
+              <br />
+              <input type="text" list="lstNavegador" id="txtNavegador" />
+              <br /><br />
+              <datalist id="txtNavegador">
+                <option value="Internet Explorer"></option>
+                <option value="Firebox"></option>
+                <option value="google"></option>
+              </datalist>
+              <label> Marque la opcion : </label>
+              <br />
+              <div style="display: flex">
+                <label for="femenino">Femenino </label>
+                <input
+                  type="radio"
+                  id="femenino"
+                  name="sexo"
+                  value="femenino"
+                  checked
+                />
+                <label for="masculino">Masculino </label>
+                <input
+                  type="radio"
+                  id="masculino"
+                  name="sexo"
+                  value="masculino"
+                />
+              </div>
+              <br />
+              <label>Marque las opciones : </label>
+              <div>
+                <div class="checkbox">
+                  <label for="tecnologia">Celular</label>
+                  <input type="checkbox" id="tecnologia" value="2checkbox" />
+                </div>
+                <div class="checkbox">
+                  <label for="tecnologia">Monitor</label>
+                  <input
+                    class="opcion2"
+                    type="checkbox"
+                    id="tecnologia"
+                    value="3checkbox"
+                  />
+                </div>
+              </div>
+                <output name="numero" for="numero"> </output>
+                <br>
+                <input type="number" name="numero" id="numero">
+                <br>
+              <button type="button" class="button" data-close>Cerrar</button>
+              <button type="reset" class="button">Borrar</button>
+              <button onclick="enviar()" type="button" class="button">Enviar</button>
+              
+            </fieldset>
+          </form>
+        </div>
+        <div class="container-2">
+          <div class="header">
+            <h3>Para realizar la pre-inscripcion haga click en ingresar</h3>
+          </div>
+          <div>
+            <button type="button" class="btn" data-open="modal">
+              ingresar
+            </button>
+            <button type="button" class="btn" onclick="agregar(event)" >Agregar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
